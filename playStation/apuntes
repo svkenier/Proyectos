@@ -1,0 +1,154 @@
+selector: es el elemento al que vamos a aplicar estilos
+propiedad: es lo que vamos a cambiar
+valor: el nuevo valor que le vamos a dar a la propiedad
+proiedad:valor-> se le denomina declaracion
+al conjunto de selector(es) mas declaraciones se le denomina regla 
+
+selector{
+    propiedad: valor;
+}
+
+Tipos de selectores
+*selectores simples 
+
+-selectores elementales
+    selector universal-> *
+    selector de toipo o etiqueta->nombre de la etiqueta
+
+-selectores de atributos
+    id-> id del elemento 
+        #nombre de id{
+            propiedad:valor;
+        }
+
+    clase-> clase de el elemento
+    .nombre de clase{
+        propiedad:valor
+    }
+    
+    -otros atibutos
+
+selecciona un atributo espesifico
+    [atributo]{
+    propiedad: valor;
+};
+seleciona los atributos con ese valor->
+    [atributo="valor"]{
+    propiedad: valor;
+};
+comprueba si el atributo empieza por ese valor -> 
+    [atributo^="valor"]{
+    propiedad: valor;
+};
+seleccina el atributo sin importar la posicicon ->
+[atributo*="valor"]{
+    propiedad: valor;
+};
+
+seleciona los que terminan por ese valor
+[atributo$="valor"]{
+    propiedad: valor;
+};
+seleciona atibustos con gion "-" ->
+[atributo|="valor"]{
+    propiedad: valor;
+};
+
+*selectores compuestos
+
+-selectores agrupados
+
+ejemplo:  .nombre de la clase,
+          .nombre de la clase,
+          .nombre de la clase,
+          .nombre de la clase{
+    propiedad:valor
+};
+-selectores combinadores
+
+delectores decendentes : se usa para selecionar hijos 
+
+div .clases {
+    propiedad:valor
+};
+
+selector de hermano: se usa para selecionar al hermano siguiente-> (+)
+
+.clase + .clase{
+    propiedad valor
+};
+
+selector de hermanos: se usa para selecionar a todos los hermano siguiente-> (~)
+
+.clase ~ .clase{
+    propiedad valor
+};
+ selector de hijos directos: seleciona solo los hijos directos
+
+ .clase > p{
+    propiedad valor
+};
+
+pseudoclases - pseudoelementos
+
+¿COMO FUNCIONA CCS?
+Especificidad -> establece como de especifico es un selector para saber que estilo aplicar .
+El carlculo realiza la siguiente formula:
+    Etiquetas y pseudoelentos 001
+    Clases y atributos 010
+    Ids 100
+    Estilos de linea 1000
+    Important LE GANA A TODO Y NO SE USA NUNCA
+    
+    CASCADA-> funciona siempre que la especificidad sea la misma
+
+    HERENCIA-> Es la capacidad que tienen algunos elementos de heredar algunas propidedades de sus elementos contenedores (pades,abuelos, etc) 
+
+    nota:   forzar herencia (inherit)
+                .clase{
+                    color: inherit;
+                    };
+
+
+            no heredar nada vuelve a el estato inicial (initial) 
+                .clases{
+                    color:initial;
+                }
+
+nota: revisar codigo en impecionar elemento  pestañas styles y coputed
+
+nota linkear hoja de estilos normalize.ccs para poner estilos por defecto a todos los navegadores 
+
+prepros: programa para agregar prefifijos de todos los navegadores
+
+pading distancia entre el borde de la caja y su contenido
+
+margin controla el margen externo de de la caja
+
+mismas reglas para pading
+
+margin-top: margen superior
+margin-right: margen derecho
+margin-bottom: margen inferior
+margin-left: margen izquierdo
+
+permite hasta 4 valores que va en sentido de las agujas de el reloj
+
+4 valores -> margin: top, right, bottom, left
+3 valores -> margin: top, left/right, bottom
+
+
+
+border: controla el borde de la caja
+
+content: controla el contenido de la caja
+
+width: controla el ancho de la caja
+
+height: controla el alto de la caja
+
+
+nota: los elementos de linea no se tienen medidas (no se le puede asignar alto y ancho)
+
+los margenes vertucales se colacsan
+

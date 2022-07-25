@@ -1,0 +1,50 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(
+    https://as1.ftcdn.net/v2/jpg/04/65/49/74/1000_F_465497493_6bgGVUHeceIsrYQGKoAD4rsv105V6iPB.jpg
+  );
+  background-repeat: no-repeat;
+  background-size:cover ;
+  
+  
+ 
+
+ 
+}
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.formMaterial{
+  display: flex;
+flex-direction: column ;
+
+
+}
+
+.campo{
+  height: 40px ;
+  border: transparent;
+  background: transparent;
+  border-bottom: solid #333 1px;
+  margin: 25px;
+}
+
+.campo:hover{
+  border: solid #333 1px; 
+  
+}
+
+.sms{
+  height: 70px;
+ 
+}

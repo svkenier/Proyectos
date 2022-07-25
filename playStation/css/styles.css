@@ -1,0 +1,331 @@
+
+*{
+    box-sizing: border-box;
+    
+
+    }
+
+  
+
+    /* ///////////////body/////////// */
+
+    .cont{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-items: center;
+       
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+       
+        background-color: rgba(102, 92, 190, 0.767);
+
+
+    }
+
+   
+
+
+
+    /* ////////////////////////header///////////////// */
+
+    .header{
+        height: 10vh;
+       
+        display:flex;
+        justify-content: space-between;
+
+    }
+
+    .logo img{
+        height: 10vh;
+    }
+/* /////////////////footer/////////////// */
+
+    .pie{
+        height: 20vh;
+      
+        display: flex;
+        justify-content: space-around;
+      
+    }
+    .csla{
+        height: 100%;
+        width: 20%;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+        
+        background-color: white;
+    
+    }
+    .csla:hover{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+    }
+    .csla img{
+        width: 100%;
+        height: 100%;
+        padding: 5px 2.5px;
+    }
+ 
+    .csla img:hover{
+        height: 80%;
+        width:80%;
+        
+        border: #000 solid 3px; 
+        border-radius: 2px;
+        
+        transition: 0.6s;
+    }
+
+
+  /* //////////////////////////juegos/////////////////// */
+
+   .juego{
+       position: relative;
+       
+       display: flex;
+       justify-items: center;
+       align-items: center;
+
+       width: 190px;
+       height: 255px;
+      
+      background-color: #0c0b0b;
+      
+      transition: 1.5s;
+      transform-style: preserve-3d;
+       
+       
+     
+       
+   }
+
+   .juego img{
+    width: 100%;   
+    height: 100%;
+    
+    transform:scale(0.96)
+    
+}
+
+   .cara,.rev{
+       position: absolute;
+       
+       width: 100%;
+       height: 100%;
+       min-height: 270px;
+       min-width: 190px;
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-items: center;
+       
+       background-color: #111;
+       color: #999;
+       
+       backface-visibility: hidden;
+   }
+    .rev{
+        padding: 12px;
+        
+        transform: rotateY(180deg); 
+
+    }
+   
+    .rev p{
+        margin: 5px; 
+
+        text-align: center;
+ 
+   }
+
+   .rev h1{
+       text-align: center;
+       font-size: 27px;
+  
+   }
+
+   .giro-juego:hover .juego{
+       transform: rotateY(180deg);
+
+   }
+
+   /* ////////////////////////menu///////////////////////////// */
+
+
+   
+   .menu{
+    position: absolute;
+
+    height: 100vh;
+    width: 15vw;
+    
+    background-color: rgba(36, 31, 31, 0.76);
+    
+}
+   .cont-menu{
+    position:absolute;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+#btn-menu:checked ~ .cont-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+#btn-menu{
+
+    display: none;
+}
+
+.menu label {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    font-size: 20px;
+    
+    color: #999;
+}
+
+.menu label:hover{
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    width: 40px ; 
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+    
+    background-color: #000;
+    border-radius: 2px;
+}
+.X{
+    display: flex;
+    justify-content: flex-end;
+    
+    width: 100%;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 50px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+    color: #fff;
+
+}
+
+
+.menu ul {
+
+    padding-left: 0px;
+   
+    list-style: none;
+    text-decoration:none;
+
+}
+.III{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left:10px ;
+   
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.III:hover{
+    color: #999;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+li:hover{
+    background-color: gray;
+    color: #000;
+}
+
+
+  /* //////////////////@media screen ///////// */
+
+  @media screen and (max-width: 968px) {
+ 
+    .cont{
+
+grid-template-columns: repeat( 3,30%);
+    }
+
+.menu{
+    width: 30vw;
+}
+
+}
+
+
+
+
+  @media screen and (max-width: 578px ) {
+ 
+    .cont{
+            grid-template-columns: 100%;
+    }
+
+    .menu{
+        width: 30vw;
+    }
+
+   
+}
+
+@media screen and (max-width: 334px ) {
+ 
+    
+    .menu{
+        width: 70vw;
+    }
+
+   
+}
+
+
+
+/* ////////////notas/////////////// */
+
+/* agregar icono de abrir y cerrar de menu y descrpcion de los juegos */

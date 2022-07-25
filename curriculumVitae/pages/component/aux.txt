@@ -1,0 +1,102 @@
+<Box >
+            
+            <Box>
+
+            <Box  sx={{
+              width:"100%",
+              height:"320px",
+              background:"#f13666",
+              display: "flex",
+              overflow:"hidden"
+            }} >
+              
+              <Box>
+               card 1
+
+              </Box>
+              
+              <Box>
+                card 2
+              </Box>
+              
+              <Box>
+                card 3
+              </Box>
+              
+              <Box>
+                card 4
+              </Box>
+
+            
+            <Box sx={{
+                display:"flex",
+                justifyContent:"space-between",
+                alignItems: "center",
+                width:"100%",
+                height:"100%",
+                
+              }}>
+
+            <Box sx={{
+              background:"#2e4975",
+            }}>flecha izq</Box>
+            <Box sx={{
+              background:"#2e4975",
+            }}>flecha der</Box>
+            </Box>
+            
+            
+            </Box>
+            
+            
+            <Box sx={{
+              width:"100%",
+              height:"80px",
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center"
+
+            }}>
+              <Box sx={{
+                borderRadius:"50%",
+                background:"#2e4975",
+                border:"#2e4975 7px solid",
+                with:"8px",
+                height:"8px",
+                m:"8px"
+                
+
+              }} ></Box>
+              <Box sx={{
+                borderRadius:"50%",
+                background:"#2e4975",
+                border:"#2e4975 7px solid",
+                with:"8px",
+                height:"8px",
+                m:"8px"
+
+
+              }}></Box>
+              <Box sx={{
+                borderRadius:"50%",
+                background:"#2e4975",
+                border:"#2e4975 7px solid",
+                with:"8px",
+                height:"8px",
+                m:"8px"
+
+              }}></Box>
+              <Box sx={{
+                borderRadius:"50%",
+                background:"#2e4975",
+                border:"#2e4975 7px solid",
+                with:"8px",
+                height:"8px",
+                m:"8px"
+
+              }}></Box>
+            </Box>
+
+            </Box>
+
+          </Box>
